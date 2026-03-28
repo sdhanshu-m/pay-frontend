@@ -36,7 +36,7 @@ const loadHistory = async () => {
       });
 
       const options = {
-        key: data.key,
+        key: import.meta.env.VITE_RAZORPAY_KEY_ID,
         amount: data.amount,
         currency: data.currency,
         order_id: data.orderId,
